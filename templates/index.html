@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <form action="{{url_for('predict')}}" method="post">
+        <input type="text" placeholder="Type your sentence" name="sentence" required="required">
+        <button type="submit">Predict</button>
+    </form>
+    <br>    
+    <p>Input Text : {{ input_text }}</p>
+    <p>Predicted Sentiment : {{ predicted_text }}</p>
+</body>
+</html>
